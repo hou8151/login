@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-lg p-5 mt-5 mb-5">
+              <h1 class="text-center"> welcome Here!</h1><hr>
+              <div class="alert alert-success" role="alert">
+                Account has been Created! <a routerLink="/login" class="text-primary"
+                style="cursor: pointer;">login Here </a>
+              </div>
+                <form [formGroup]="singupfrom" class="text-left">
+                  <div class="from-group">
+                     <label>Display Name</label>
+                      <input type="text" class="form-control" placeholder="Username" formControlName="displayName">
+                       <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email Id here" formControlName="email">
+                         <label>password</label>
+                          <input type="password" class="form-control" placeholder="********" formControlName="passwort">
+                     </div>
+                     <button class="btn btn-outline primary btn-block" (click)="singup()"> create Account</button>
+                </form>
+            </div>
+       </div>
+    </div>
+</div>
